@@ -15,7 +15,7 @@ class SnakeBoard:
 		#init display
 		self.display = pygame.display.set_mode((self.w, self.h))
 		pygame.display.set_caption('Snake: The Game')
-		self.clock = pygame.time.clock()
+		self.clock = pygame.time.Clock()
 
 		#init game state
 		self.direction = ""
