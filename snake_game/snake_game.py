@@ -10,11 +10,6 @@ import pygame
 pygame.init()
 pygame.display.list_modes()
 
-#Todo:
-#reset function that reopen a game after a defeat
-# reward systeme for the AI
-# play(action) - > direction
-# game_iteration : keeps track of all the games
 
 #to help having better direction in the code
 class Direction(Enum):
