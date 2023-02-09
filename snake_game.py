@@ -88,7 +88,7 @@ class SnakeGameAI:
 		#check result of the move
 		reward = 0
 		game_over = False
-		if self._is_collision() or self.frame_iterations > 100 * len(self.snake): #if the snake touch border or if too much time passes without anything happening
+		if self.is_collision() or self.frame_iterations > 100 * len(self.snake): #if the snake touch border or if too much time passes without anything happening
 			game_over = True
 			reward = -10
 			return(reward, game_over, self.score)
@@ -109,7 +109,7 @@ class SnakeGameAI:
 		
 		return(reward, game_over, self.score)
 
-	def	_is_collision(self, pt=None):
+	def	is_collision(self, pt=None):
 
 		if pt == None:
 			pt = self.head
